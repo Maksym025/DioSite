@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мій сайт</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      /* Фон без Windows-шляхів */
+      background-image: url("Group 1.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header {
+       background: rgb(0, 0, 0);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 15px;
+    }
+
+    header img {
+      height: 120px;
+    }
+.overlay {
+  width: 80%;
+  margin: 20px auto 80px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(0,0,0,1); /* чорний фон */
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  display: flex;              /* робимо 2 колонки */
+  gap: 300px;                  /* відстань між лівою і правою частиною */
+  color: red;
+}
+
+/* ліва частина */
+.overlay-left {
+  flex: 1; /* займає половину ширини */
+  text-align: center;
+}
+
+.overlay-img {
+  width: 100%;
+  max-width: 250px; /* обмежуємо розмір */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.overlay-text {
+  font-size: 18px;
+}
+
+/* права частина */
+.overlay-right {
+  flex: 1; /* друга половина ширини */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.overlay-video {
+  width: 100%;      /* можна змінювати ширину */
+  height: 350px;    /* можна змінювати висоту */
+  object-fit: cover; /* щоб відео не спотворювалося */
+  display: block;
+  border-radius: 10px; /* закруглені краї відео */
+}
+
+
+
+
+
+    footer {
+       background: rgba(0, 0, 0, 1);
+      color: rgb(255, 0, 0);
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 2%;
+      display: flex;
+  justify-content: flex-start; /* зліва */
+  align-items: center;         /* по вертикалі по центру */
+  height: 50px;
+  padding-left: 20px;
+    }
+    footer img {
+      height: 40px;
+    }
+    a:link {
+  color: red;
+  text-decoration: none;
+}
+a:visited {
+  color: red;
+}
+
+.link-with-image {
+  background: url('D:\Temp\DIO\Logo.png') no-repeat left center; /* Зображення зліва по центру */
+  padding-left: 20px; /* Відступ, щоб текст не перекривав зображення */
+  color: #007bff; /* Початковий колір тексту */
+  text-decoration: none; /* Забираємо підкреслення */
+}
+  </style>
+</head>
+<body>
+  <header>
+  <a href="Dioband.html">
+    <img src="Logo.png" alt="Dio logo">
+    <a href="Discography.html" 
+   style="font-size: 20px; font-weight: bold; color: red; text-decoration: none;">
+   Discography
+</a>
+  </a>
+</header>
+
+
+  <div class="overlay">
+  <div class="overlay-left">
+    <img src="DioDreamEvil.jpg" alt="Holy Diver" class="overlay-img">
+    <p class="overlay-text">
+     Dream Evil is the fourth studio album by American heavy metal band Dio, released in August 1987. It is the first album without Vivian Campbell who left the band in 1986, and features former Rough Cutt members Craig Goldy on guitar and Claude Schnell on keyboards. It includes the singles "All the Fools Sailed Away" and "I Could Have Been a Dreamer".
+    </p>
+  </div>
+
+  <div class="overlay-right">
+    <h3 style="color: red;">Most popular song</h3>
+     <video class="overlay-video" controls>
+    <source src="Dio-Dream Evil Live In Reggio Emilia 1987.mp4" type="video/mp4">
+    Ваш браузер не підтримує відео.
+  </video>
+
+  </div>
+</div>
+  <footer>
+
+    <a href="https://music.youtube.com/channel/UC_CV5Tm8DM5zIRhzsqf53PA">Dio YM</a>
+  </footer>
+</body>
+</html>

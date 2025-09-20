@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мій сайт</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      /* Фон без Windows-шляхів */
+      background-image: url("Group 1.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header {
+       background: rgb(0, 0, 0);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 15px;
+    }
+
+    header img {
+      height: 120px;
+    }
+.overlay {
+  width: 80%;
+  margin: 20px auto 80px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(0,0,0,1);       /* чорний фон */
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+  gap: 20px;                             /* відстань між фото */
+}
+
+.gallery a img {
+  width: 80%;              /* щоб займало всю колонку */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+
+.gallery a img:hover {
+  transform: scale(1.05);
+}
+
+
+
+    footer {
+       background: rgba(0, 0, 0, 1);
+      color: rgb(255, 0, 0);
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 2%;
+      display: flex;
+  justify-content: flex-start; /* зліва */
+  align-items: center;         /* по вертикалі по центру */
+  height: 50px;
+  padding-left: 20px;
+    }
+    footer img {
+      height: 40px;
+    }
+    a:link {
+  color: red;
+  text-decoration: none;
+}
+a:visited {
+  color: red;
+}
+
+.link-with-image {
+  background: url('D:\Temp\DIO\Logo.png') no-repeat left center; /* Зображення зліва по центру */
+  padding-left: 20px; /* Відступ, щоб текст не перекривав зображення */
+  color: #007bff; /* Початковий колір тексту */
+  text-decoration: none; /* Забираємо підкреслення */
+}
+  </style>
+</head>
+<body>
+  <header>
+  <a href="Dioband.html">
+    <img src="Logo.png" alt="Dio logo">
+    <a href="Discography.html" 
+   style="font-size: 20px; font-weight: bold; color: red; text-decoration: none;">
+   Discography
+</a>
+  </a>
+</header>
+
+
+<div class="overlay">
+  <div class="gallery">
+    <a href="HolyDiver.html"><img src="DioHolyDiver.jpg" alt="Holy Diver"></a>
+    <a href="LastinLine.html"><img src="DioTheLastInLine.jpg" alt="TheLastInLine"></a>
+    <a href="SacredHeart.html"><img src="Dio_SacredHeart.jpg" alt="SacredHeart"></a>
+    <a href="DreamEvil.html"><img src="DioDreamEvil.jpg" alt="Fourth"></a>
+    <a href="LUTW.html"><img src="DioLockUpTheWolves.jpg" alt="Fifth"></a>
+    <a href="strhigh.html"><img src="DioStrangeHighways.jpg" alt="Sixth"></a>
+    <a href="AngM.html"><img src="Angry_Machines.jpg" alt="Fourth"></a>
+    <a href="Magica.html"><img src="DioMagica.jpg" alt="Fifth"></a>
+    <a href="KillDragon.html"><img src="DioKillingTheDragon.jpg" alt="Sixth"></a>
+    <a href="Master.html"><img src="DioMasterOfTheMoon.jpg" alt="Sixth"></a>
+  </div>
+</div>
+
+  <footer>
+   
+    <a href="https://music.youtube.com/channel/UC_CV5Tm8DM5zIRhzsqf53PA">Dio YM</a>
+  </footer>
+</body>
+</html>
